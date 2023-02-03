@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,35 +15,76 @@
   </style>
 </head>
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
+  <div class="theRealBody">
+  <div class="container">
+    <div class="containerStar">
+    <div class="star">
+      <img src="images/icon-star.svg" class="starImg">
+    </div>
+    </div>
+   
+    <div class="contentText">
+  <h1 class="h1">How did we do?</h1>
+  <p class="textHow">
   Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+  to help us improve our offering!</p>
+  </div>
+  <div class="divRate">
+  <ul class="rate">
+  <li><button name="1" class="btn" id="1" onclick="rate(name)"> 1 </button></li>
+  <li><button name="2" class="btn" id="2" onclick="rate(name)"> 2 </button></li>
+  <li><button name="3" class="btn" id="3" onclick="rate(name)"> 3 </button></li>
+  <li><button name="4" class="btn" id="4" onclick="rate(name)"> 4 </button></li>
+  <li><button name="5" class="btn" id="5" onclick="rate(name)"> 5 </button></li>
+  </ul>
+</div>
 
-  1 2 3 4 5
+  <div class="submit">
+    <button name="submitBtn" class="submitBtn" onclick="submit()">SUBMIT</button>
+  </div>
 
-  Submit
 
-  <!-- Rating state end -->
 
-  <!-- Thank you state start -->
+  </div>
+  <div class="attribution">
+    <p class="challengeText">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Vasiliu Ilie-Cristian</a>.</p>
+  </div>
+</div>
 
-  You selected <!-- Add rating here --> out of 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  -- Rating state start --
+
+
+
+  -- Rating state end --
+
+  -- Thank you state start --
+
+  You selected -- Add rating here -- out of 5
 
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
 
-  <!-- Thank you state end -->
+  -- Thank you state end -- -->
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>
