@@ -5,8 +5,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top:calc(50%-200px);
     background-color: hsl(216, 12%, 8%);
+}
+p{
+    color:white;
+    font-family: "Overpass";
 }
 .attribution{
     color: white;
@@ -23,13 +26,25 @@ body{
 
 .container{
     background: radial-gradient(circle at top,hsl(213, 19%, 18%) 0%,hsla(217, 12%, 63%, 0.01));
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    
+    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+@media (max-width: 375px) {
+    .container{
+        background: radial-gradient(circle at top,hsl(213, 19%, 18%) 0%,hsla(217, 12%, 63%, 0.01));
+        width: 18rem;
+        height: 21rem;
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
 }
