@@ -1,0 +1,57 @@
+#rateContainer{
+    display: none;
+}
+p{
+    color:white;
+    font-family: "Overpass";
+}
+.photoThankyou{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+.rateing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.rateingBackground{
+    background-color: hsl(216, 12%, 8%);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 50%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pSelected{
+    color: hsl(25, 97%, 53%);
+    text-align: center;
+    font-size: 15px;
+}
+.contentText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.h1{
+    color:white;
+    font-family: "Overpass";
+    margin-bottom: 0px;
+    text-align: center;
+}
+.thankText{
+    color: hsl(217, 12%, 63%);
+    margin-top: 0.5rem;
+    text-align: center;
+}

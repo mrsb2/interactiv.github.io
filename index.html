@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="script.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
   <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="rate.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="sumit.css">
+  
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,76 +18,67 @@
   </style>
 </head>
 <body>
-  <div class="theRealBody">
-  <div class="container">
+
+  <div class="container" id="submitContainer">
     <div class="containerStar">
-    <div class="star">
-      <img src="images/icon-star.svg" class="starImg">
-    </div>
+        <div class="star">
+            <img src="images/icon-star.svg" class="starImg">
+        </div>
     </div>
    
-    <div class="contentText">
-  <h1 class="h1">How did we do?</h1>
-  <p class="textHow">
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!</p>
+  <div class="contentText">
+    <h1 class="h1">How did we do?</h1>
+    <p class="textHow">
+    Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!
+    </p>
   </div>
   <div class="divRate">
-  <ul class="rate">
-  <li><button name="1" class="btn" id="1" onclick="rate(name)"> 1 </button></li>
-  <li><button name="2" class="btn" id="2" onclick="rate(name)"> 2 </button></li>
-  <li><button name="3" class="btn" id="3" onclick="rate(name)"> 3 </button></li>
-  <li><button name="4" class="btn" id="4" onclick="rate(name)"> 4 </button></li>
-  <li><button name="5" class="btn" id="5" onclick="rate(name)"> 5 </button></li>
-  </ul>
-</div>
+    <form class="formBtn" for="btn" id="formID">
+        <input value="1" type="radio" id="1" name="btn" class="hidden"><label for="1">1</label>
+        <input value="2" type="radio" id="2" name="btn" class="hidden"><label for="2">2</label>
+        <input value="3" type="radio" id="3" name="btn" class="hidden"><label for="3">3</label>
+        <input value="4" type="radio" id="4" name="btn" class="hidden"><label for="4">4</label>
+        <input value="5" type="radio" id="5" name="btn" class="hidden"><label for="5">5</label>
+    </form>
+   
+  </div>
 
   <div class="submit">
     <button name="submitBtn" class="submitBtn" onclick="submit()">SUBMIT</button>
   </div>
+  </div>
 
 
+  <div class="container" id="rateContainer">
+    <div class="photoThankyou">
+        <img alt="Thank you" src="images/illustration-thank-you.svg" class="thankImg">
+    </div>
+   
+    <div class="rateing">
+        <div class="rateingBackground">
+            <p class="pSelected" id="rateLvl">You selected 4 out of 5</p>
+        </div>
+    </div>
+
+
+    <div class="contentText">
+        <h1 class="h1">Thank you!</h1>
+        <p class="thankText">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+        </p>
+    </div>
+  
 
   </div>
+
+  
   <div class="attribution">
     <p class="challengeText">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Vasiliu Ilie-Cristian</a>.</p>
   </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-  -- Rating state start --
-
-
-
-  -- Rating state end --
-
-  -- Thank you state start --
-
-  You selected -- Add rating here -- out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  -- Thank you state end -- -->
-
-  
 
 </body>
 </html>
