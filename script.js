@@ -1,4 +1,11 @@
 
+
+document.getElementById('rateContainer').style.display="none";
+
+
+
+
+
 function submit()
 {
     let v = document.querySelector('input[name="btn"]:checked').value;
